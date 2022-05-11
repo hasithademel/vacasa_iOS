@@ -20,7 +20,21 @@
 		74C0EAB7282A5AAA005E65A2 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C0EAB6282A5AAA005E65A2 /* SettingsViewModel.swift */; };
 		74C0EABA282B0B43005E65A2 /* UIView+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C0EAB9282B0B42005E65A2 /* UIView+Round.swift */; };
 		74C0EABC282B0CC5005E65A2 /* UIApplication+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C0EABB282B0CC5005E65A2 /* UIApplication+Version.swift */; };
+		74C0EAC4282B52F2005E65A2 /* VacasaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C0EAC3282B52F2005E65A2 /* VacasaTests.swift */; };
+		74C0EACA282B5357005E65A2 /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C0EAA8282A43B6005E65A2 /* RepositoriesViewModel.swift */; };
+		74C0EACB282B542F005E65A2 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C0EAAB282A498C005E65A2 /* APIManager.swift */; };
+		74C0EACC282B54FC005E65A2 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C0EAAE282A4A4E005E65A2 /* Repository.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74C0EAC5282B52F2005E65A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74C0EA86282A115A005E65A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74C0EA8D282A115A005E65A2;
+			remoteInfo = Vacasa;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		74C0EA8E282A115A005E65A2 /* Vacasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vacasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,10 +52,19 @@
 		74C0EAB6282A5AAA005E65A2 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		74C0EAB9282B0B42005E65A2 /* UIView+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Round.swift"; sourceTree = "<group>"; };
 		74C0EABB282B0CC5005E65A2 /* UIApplication+Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Version.swift"; sourceTree = "<group>"; };
+		74C0EAC1282B52F2005E65A2 /* VacasaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VacasaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74C0EAC3282B52F2005E65A2 /* VacasaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacasaTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		74C0EA8B282A115A005E65A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74C0EABE282B52F2005E65A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				74C0EA90282A115A005E65A2 /* Vacasa */,
+				74C0EAC2282B52F2005E65A2 /* VacasaTests */,
 				74C0EA8F282A115A005E65A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				74C0EA8E282A115A005E65A2 /* Vacasa.app */,
+				74C0EAC1282B52F2005E65A2 /* VacasaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +193,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		74C0EAC2282B52F2005E65A2 /* VacasaTests */ = {
+			isa = PBXGroup;
+			children = (
+				74C0EAC3282B52F2005E65A2 /* VacasaTests.swift */,
+			);
+			path = VacasaTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,6 +221,24 @@
 			productReference = 74C0EA8E282A115A005E65A2 /* Vacasa.app */;
 			productType = "com.apple.product-type.application";
 		};
+		74C0EAC0282B52F2005E65A2 /* VacasaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74C0EAC7282B52F2005E65A2 /* Build configuration list for PBXNativeTarget "VacasaTests" */;
+			buildPhases = (
+				74C0EABD282B52F2005E65A2 /* Sources */,
+				74C0EABE282B52F2005E65A2 /* Frameworks */,
+				74C0EABF282B52F2005E65A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74C0EAC6282B52F2005E65A2 /* PBXTargetDependency */,
+			);
+			name = VacasaTests;
+			productName = VacasaTests;
+			productReference = 74C0EAC1282B52F2005E65A2 /* VacasaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,6 +251,10 @@
 				TargetAttributes = {
 					74C0EA8D282A115A005E65A2 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					74C0EAC0282B52F2005E65A2 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 74C0EA8D282A115A005E65A2;
 					};
 				};
 			};
@@ -217,6 +272,7 @@
 			projectRoot = "";
 			targets = (
 				74C0EA8D282A115A005E65A2 /* Vacasa */,
+				74C0EAC0282B52F2005E65A2 /* VacasaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +285,13 @@
 				74C0EA9E282A1160005E65A2 /* LaunchScreen.storyboard in Resources */,
 				74C0EA9B282A1160005E65A2 /* Assets.xcassets in Resources */,
 				74C0EA99282A115A005E65A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74C0EABF282B52F2005E65A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +315,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74C0EABD282B52F2005E65A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C0EACB282B542F005E65A2 /* APIManager.swift in Sources */,
+				74C0EACA282B5357005E65A2 /* RepositoriesViewModel.swift in Sources */,
+				74C0EAC4282B52F2005E65A2 /* VacasaTests.swift in Sources */,
+				74C0EACC282B54FC005E65A2 /* Repository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74C0EAC6282B52F2005E65A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74C0EA8D282A115A005E65A2 /* Vacasa */;
+			targetProxy = 74C0EAC5282B52F2005E65A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		74C0EA97282A115A005E65A2 /* Main.storyboard */ = {
@@ -444,6 +526,40 @@
 			};
 			name = Release;
 		};
+		74C0EAC8282B52F2005E65A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hasithademel.VacasaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vacasa.app/Vacasa";
+			};
+			name = Debug;
+		};
+		74C0EAC9282B52F2005E65A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hasithademel.VacasaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vacasa.app/Vacasa";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,6 +577,15 @@
 			buildConfigurations = (
 				74C0EAA3282A1160005E65A2 /* Debug */,
 				74C0EAA4282A1160005E65A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74C0EAC7282B52F2005E65A2 /* Build configuration list for PBXNativeTarget "VacasaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74C0EAC8282B52F2005E65A2 /* Debug */,
+				74C0EAC9282B52F2005E65A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

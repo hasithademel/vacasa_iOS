@@ -84,9 +84,6 @@ class RepositoriesViewController: UIViewController {
         self.view.addSubview(loadingIndicator)
         loadingIndicator.startAnimating()
         
-        tableView.estimatedRowHeight = UITableView.automaticDimension
-        tableView.rowHeight = UITableView.automaticDimension
-        
         initBinding()
         viewModel.loadRepositories()
 
@@ -95,7 +92,7 @@ class RepositoriesViewController: UIViewController {
     private func initBinding() {
         viewModel.$repos
             .receive(on: DispatchQueue.main)
-            .sink(receiveValue: {_ in self.renderdata()})
+            .sink(receiveValue: {[weak self] _ in self?.renderdata()})
             .store(in: &cancellables)
     }
 
